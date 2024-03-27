@@ -1,0 +1,386 @@
+$primary-color: #3498db;
+$secondary-color: #000;
+$bkcolor1: #9bba1f;
+$bkcolor2: #f73f3f;
+$bkcolor3: #ffa200;
+$textcolor: #fff;
+
+@import 'main';
+
+// #demo{
+//     img{
+//         width: 100%;
+//         height: 85vh;
+//     }
+// }
+
+.top {
+    background-image: url(../../image/school-student.jpg);
+    width: 100%;
+    height: 300px;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        content: "";
+        background-color: rgba(30, 78, 174, 0.4);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
+        z-index: 111;
+
+        h1 {
+            color: $textcolor;
+            font-size: 90px;
+            font-weight: 900;
+            z-index: inherit;
+        }
+    }
+}
+
+.welcome {
+    background-color: $bkcolor1;
+    color: $textcolor;
+    // transform: translateX(400%);
+    // transition: transform .6s;
+    overflow-x: hidden;
+
+
+
+
+    .container {
+
+        padding: 124px 0 200px 0;
+
+        .row {
+
+
+            h3 {
+                font-weight: 900;
+                font-size: 60px;
+            }
+
+            h6 {
+                line-height: 1.5;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            .images1 {
+                position: relative;
+                display: flex;
+                justify-content: right;
+
+                .img1 {
+                    position: absolute;
+                    width: 300px;
+                }
+
+                .img2 {
+                    position: absolute;
+                    width: 300px;
+                    right: 258px;
+                }
+
+                .img3 {
+                    position: absolute;
+                    width: 300px;
+                    top: 164px;
+                    right: 121px;
+                }
+            }
+        }
+    }
+}
+
+.showing {
+    transform: translateX(0);
+}
+
+.center {
+
+    background-color: $bkcolor2;
+    color: $textcolor;
+
+    h2 {
+        font-weight: bolder;
+        font-size: 60px;
+    }
+
+    h6 {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .shadow1 {
+        transition: box-shadow 0.3s ease;
+
+        &:hover {
+            box-shadow: 5px 5px 15px black;
+        }
+    }
+
+    .btn {
+        background-color: $primary-color;
+        padding: 10px 20px;
+        color: $textcolor;
+        border: none;
+
+        &:hover {
+            background-color: $bkcolor3;
+        }
+    }
+}
+
+.school {
+    h2 {
+        color: $primary-color;
+        font-size: 50px;
+        font-weight: bolder;
+        // padding-bottom: 20px;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 17px;
+        color: gray;
+    }
+
+    .center3 {
+        display: flex;
+        justify-content: end;
+    }
+
+    .btn1 {
+        background-color: $bkcolor1;
+        display: inline-block;
+        padding: 15px 30px;
+        color: $textcolor;
+        font-weight: 900;
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $bkcolor3;
+        }
+    }
+}
+
+.teacher {
+    background-color: $bkcolor3;
+    color: $textcolor;
+
+    h1 {
+        font-size: 60px;
+        font-weight: 900;
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 200px;
+            height: 3px;
+            position: absolute;
+            background-color: ghostwhite;
+            /* top: 0; */
+            bottom: 41px;
+            left: 504px;
+            ;
+        }
+    }
+
+
+
+    h3 {
+        &:hover {
+            color: $bkcolor1;
+        }
+    }
+
+    .image {
+        border-radius: 20px;
+        position: relative;
+
+        img {
+            border-radius: 10px;
+        }
+
+        .content1 {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            transition: .6s;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // background-color: #333;
+            border-radius: 10px;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            .icon i {
+                padding: 0 10px;
+                font-size: 30px;
+                transition: .6s;
+
+                &:hover {
+                    color: $bkcolor2;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+
+    body {
+        width: 100%;
+    }
+
+    #demo {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .welcome {
+        background-color: $bkcolor1;
+        color: $textcolor;
+        display: none;
+
+        .container {
+
+            // padding: 124px 0 200px 0;
+            padding: 0;
+
+            .row {
+
+
+                h3 {
+                    font-weight: 900;
+                    font-size: 60px;
+                    padding-left: 10px;
+                }
+
+                h6 {
+                    line-height: 1.5;
+                    font-size: 18px;
+                    font-weight: 700;
+                    padding-left: 20px;
+                }
+
+                p {
+                    padding-left: 20px;
+                }
+
+                .images1 {
+                    position: relative;
+                    display: none;
+
+                    .img1 {
+                        position: absolute;
+                        width: 200px;
+                        left: 30px;
+                    }
+
+                    .img2 {
+                        position: absolute;
+                        width: 200px;
+                        right: 27px;
+                    }
+
+                    .img3 {
+                        position: absolute;
+                        width: 200px;
+                        top: 103px;
+                        right: 113px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .center {
+
+        background-color: $bkcolor2;
+        color: $textcolor;
+
+        h2 {
+            font-weight: bolder;
+            font-size: 40px;
+        }
+
+        h6 {
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .shadow {
+            &:hover {
+                box-shadow: 13px 13px 13px black;
+            }
+        }
+
+        .btn {
+            background-color: $primary-color;
+            padding: 10px 20px;
+            color: $textcolor;
+            border: none;
+
+            &:hover {
+                background-color: $bkcolor3;
+            }
+        }
+    }
+
+    .school {
+        h2 {
+            color: #3498db;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+    }
+
+    .footer {
+        .icon {
+            float: left;
+
+            i {
+
+                padding: 0 20px 0 0;
+            }
+        }
+    }
+}

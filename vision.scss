@@ -1,0 +1,276 @@
+$primary-color: #3498db;
+$secondary-color: #000;
+$bkcolor1:#9bba1f;
+$bkcolor2:#f73f3f;
+$bkcolor3:#ffa200;
+$textcolor:#fff;
+
+@import 'main';
+
+  .top{
+    background-image: url(../../image/preschool-kid.jpg);
+    width: 100%;
+    height: 300px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+
+    &::before{
+        content: "";
+        background-color:rgba(30, 78, 174, 0.4);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
+        z-index: 111;
+
+        h1{
+            color: $bkcolor1;
+            font-size: 90px;
+            font-weight: 900;
+            z-index: inherit;
+        }
+    }
+}
+
+.vision{
+
+    background-color: $bkcolor1;
+
+    h1{
+        color: $secondary-color;
+        font-weight: 900;
+    }
+
+    color: $textcolor;
+
+
+    
+    
+    h2{
+        color: $secondary-color;
+        font-size: 30px;
+        font-weight: 600;
+        transition: all .6s;
+
+        // &:hover{
+        //     color: $bkcolor1;
+        // }
+    }
+    img{
+        width: 445px;
+        height: 300px;
+        padding-right: 20px;
+    }
+
+    p{
+
+        transition: all .6s;
+        
+        // &:hover{
+        //     color: $bkcolor1;
+        // }
+    }
+
+    .col-10{
+        background-color: $bkcolor3;
+    }
+}
+
+.footer{
+    background-color: $primary-color;
+    color: $textcolor;
+
+    .icon{
+        float: right;
+
+        i{
+            padding: 0 15px;
+            font-size: 30px;
+
+            &:hover{
+                color: $bkcolor3;
+            }
+        }
+    }
+  }
+  @media (max-width: 900px) {
+
+    h1{
+        font-size: 40px;
+    }
+
+    body{
+        width: 100%;
+    }
+    .header{
+        nav{
+            
+            ul{
+                display: none;
+            }
+
+            .show {
+                display: block;
+                position: absolute;
+                
+                width: 100%;
+                padding: 30px;
+                background: black;
+                font-size: xx-large;
+                top: 169px ;
+                right: 0;
+                z-index: 999;
+
+                li {
+                    padding-bottom: 10px;
+                  }
+              }
+        }
+        .menu {
+            display: block;
+            font-size: 30px;
+            color: #fff;
+        }
+    }
+
+   
+    .top {
+        .content {
+         
+            padding: 60px;
+
+            h1 {
+                color: #9bba1f;
+                font-size: 69px;
+                font-weight: 900;
+                z-index: inherit;
+                text-align: center;
+            }
+        } 
+    }
+
+    .about-new {
+        h1{
+            font-size: 40px;
+
+        }
+
+        h6{
+            font-size: 25px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        img{
+            width: 250px;
+            height: 200px;
+        }
+
+        ul{
+            font-size: 20px;
+        }
+    }
+    
+    .advantages{
+        h1 {
+            font-weight: 900;
+            font-size: 40px;
+        }
+
+        .num {
+            background-color: #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            padding: 10px;
+            margin: 10px auto;
+        }
+
+        .btn1 {
+            background-color: #9bba1f;
+            /* display: inline-block; */
+            padding: 15px 30px;
+            color: #fff;
+            font-weight: 900;
+            font-size: 29px;
+            cursor: pointer;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h6 {
+            font-weight: 700;
+            font-size: 28px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .vision{
+        img {
+            width: 100%;
+            height: 100px;
+            padding-right: 0;
+        }
+
+        h1{
+            font-size: 45px;
+        }
+
+        h2{
+            font-size: 50px;
+        }
+
+        p{
+            font-size: 25px;
+        }
+
+        ol{
+            font-size: 20px;
+        }
+    }
+
+    .test{
+        h1{
+            font-size: 40px;
+        }
+
+
+        i{
+            font-size: 60px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+   
+
+  .footer{
+    .icon{
+        float: left;
+
+        i{
+           
+            padding: 0 20px 0 0;
+        }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+$primary-color: #3498db;
+$secondary-color: #000;
+$bkcolor1:#9bba1f;
+$bkcolor2:#f73f3f;
+$bkcolor3:#ffa200;
+$textcolor:#fff;
+
+@import 'main';
+
+  .top{
+    background-image: url(../../image/preschool-kid.jpg);
+    width: 100%;
+    height: 300px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+
+    &::before{
+        content: "";
+        background-color:rgba(30, 78, 174, 0.4);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
+        z-index: 111;
+
+        h1{
+            color: $bkcolor1;
+            font-size: 90px;
+            font-weight: 900;
+            z-index: inherit;
+        }
+    }
+}
+
+.topp{
+    img{
+        width: 100%;
+        height: 300px;
+        padding: 0;
+    }
+    
+}
+
+.achive{
+    background-color:$bkcolor1;
+    color: $textcolor;
+
+    h1{
+        // font-size: 60px;
+        font-weight: 900;
+    }
+
+    .contentbx {
+        border-bottom: 1px solid #ddd;
+
+
+       
+
+        .para{
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            transition: .5s;
+
+            .images{
+                
+                .cer{
+                    display: inline-block;
+                    
+                    img{
+                        width: 150px;
+                    
+                    }
+                }
+            }
+          }
+          
+
+        .label{
+
+            &::before{
+                content: "+";
+                position: absolute;
+                top: 50%;
+                right: 50px;
+                transform: translateY(-50%);
+                font-size: 30px;
+                
+                }
+
+        }
+      }
+  }
+
+  .achive{
+    .newclass{
+            
+        .para{
+            height: 500px;
+            padding: 20px;
+            margin-bottom: 30px;
+          }
+
+          .label{
+            &::before{
+                content: "-";
+              }
+        }
+      } 
+  }
+  
+  
+  .label {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover{
+        color: #f82249;
+      }
+  }
+  
+  @media (max-width: 900px) {
+
+    
+
+    body{
+        width: 100%;
+    }
+    .header{
+        nav{
+            
+            ul{
+                display: none;
+            }
+
+            .show {
+                display: block;
+                position: absolute;
+                
+                width: 100%;
+                padding: 30px;
+                background: black;
+                font-size: xx-large;
+                top: 169px ;
+                right: 0;
+                z-index: 999;
+
+                li {
+                    padding-bottom: 10px;
+                  }
+              }
+        }
+        .menu {
+            display: block;
+            font-size: 30px;
+            color: #fff;
+        }
+    } 
+    
+.achive{
+    h1{
+        font-size: 40px;
+    }
+}
+
+}
+
+

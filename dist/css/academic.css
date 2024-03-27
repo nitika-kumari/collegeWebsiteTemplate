@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 0;
+  transition: all 0.4s ease;
+  z-index: 999;
+  background-color: #3498db;
+}
+.header nav ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  padding-top: 20px;
+}
+.header nav ul .dropdown .dropbtn {
+  display: inline-block;
+  text-decoration: none;
+}
+.header nav ul .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.header nav ul .dropdown .dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+}
+.header nav ul .dropdown .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.header nav ul .dropdown:hover .dropdown-content {
+  display: block;
+}
+.header nav ul li {
+  padding: 0 10px;
+  list-style: none;
+  position: relative;
+}
+.header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.header nav ul li a:hover {
+  color: #000;
+}
+.header nav ul li .active {
+  color: #000;
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  transition: all 0.6s;
+}
+.header nav ul li .active:hover {
+  background-color: #000;
+  color: #f1f1f1;
+}
+.header nav ul:hover {
+  color: #000;
+}
+.header .menu {
+  display: none;
+}
+
+.sticky {
+  background-color: #ffa200;
+  padding: 20px;
+  color: #fff;
+  position: fixed;
+}
+
+.footer {
+  background-color: #3498db;
+  color: #fff;
+}
+.footer .icon {
+  float: right;
+}
+.footer .icon i {
+  padding: 0 15px;
+  font-size: 30px;
+}
+.footer .icon i:hover {
+  color: #ffa200;
+}/*# sourceMappingURL=academic.css.map */
